@@ -1,0 +1,496 @@
+/* ===================================================================
+ * 00. setting
+ *
+ * ------------------------------------------------------------------- */
+body{
+  margin: 0px;
+}
+tr,td{
+  vertical-align : top;
+}
+#black{
+    background:black;
+}
+/* ===================================================================
+ * 01. pazing
+ *
+ * ------------------------------------------------------------------- */
+#kyaryunha_page{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-weight : bold;
+    background : #FF8E99;
+    color : white;
+}
+#general_page{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-weight : bold;
+    background : #FFFFFF;
+    color : #080808;
+}
+#first_page{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-weight : bold;
+    background : #FFFFFF;
+    color : #080808;
+}
+#second_page{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-weight : bold;
+    background : #FFFFFF;
+    color : #080808;
+}
+#third_page{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-weight : bold;
+    background : #FFFFFF;
+    color : #080808;
+}
+#fourth_page{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-weight : bold;
+    background : #FFFFFF;
+    color : #080808;
+}
+#contact_page{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-weight : bold;
+    background : #FFFFFF;
+    color : #080808;
+}
+/* ===================================================================
+ * 02. kyaruynha
+ *
+ * ------------------------------------------------------------------- */
+ #kyaryunha_table{
+   width : 100%;
+   height : 100%;
+ }
+#kyaryunha_title{
+    font-size : 350%;
+    font-family:"맑은 고딕";
+    line-height:300%;
+    font-weight : bold;
+    color : white;
+}
+#kyaryunha_info{
+    font-size: 110%;
+    font-family:"맑은 고딕";
+    line-height:350%;
+    font-weight : bold;
+    color : white;
+}
+#kyaryunha_sajin {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width : 50%;
+    height: width;
+    border-radius: 100%;
+    object-position: center;
+    object-fit: cover;
+    overflow: hidden;
+}
+#kyaryunha_scroller {
+    position: absolute;
+    bottom: 12%;
+    left: 16%;
+}
+#kyaryunha_link,
+#kyaryunha_link:visited,
+#kyaryunha_link:focus
+{
+  font-size : 130%;
+  color: #FFFFFF;
+	text-decoration : none;
+}
+
+#kyaryunha_link:hover
+{
+	color: skyblue;
+}
+/* ===================================================================
+ * 03. sleepcomputer
+ *
+ * ------------------------------------------------------------------- */
+#sleepcomputer_table{
+    width : 100%;
+    height : 100%;
+}
+#sleepcomputer_title{
+    font-size: 300%;
+    font-family:"맑은 고딕";
+    line-height:350%;
+    font-weight : bold;
+    color : #FF99FF;
+}
+#sleepcomputer_info{
+    font-size: 100%;
+    font-family:"맑은 고딕";
+    line-height:220%;
+    font-weight : bold;
+    color : #646464;
+}
+
+#sleepcomputer_link,
+#sleepcomputer_link:visited,
+#sleepcomputer_link:focus
+{
+    font-size: 130%;
+    color : #000000;
+    text-decoration : none;
+}
+
+#sleepcomputer_link:hover
+{
+	   color: gray;
+}
+/* ===================================================================
+ * 04. arithmetic
+ *
+ * ------------------------------------------------------------------- */
+#arithmetic_table{
+    width : 100%;
+    height : 100%;
+}
+#arithmetic_title{
+    font-size: 300%;
+    font-family:"맑은 고딕";
+    line-height:350%;
+    font-weight : bold;
+    color : #FF99FF;
+}
+#arithmetic_info{
+    font-size: 100%;
+    font-family:"맑은 고딕";
+    line-height:220%;
+    font-weight : bold;
+    color : #646464;
+}
+#arithmetic_game_pan{
+    font-size: 100%;
+    font-family:"맑은 고딕";
+    font-weight : bold;
+    color : #646464;
+    background : yellow;
+    border-radius: 20%;
+}
+#arithmetic_game_kan{
+    vertical-align: middle;
+    font-size: 200%;
+    font-family:"맑은 고딕";
+    width : 13%;
+    height : 25%;
+    border-radius: 20%;
+    font-weight : bold;
+    background : pink;
+    text-align : right;
+    color : #646464;
+}
+#arithmetic_game_button{
+    font-size: 120%;
+    font-family:"맑은 고딕";
+    font-weight : bold;
+    color : #646464;
+    background : yellowgreen;
+    border-radius: 100%;
+}
+#arithmetic_game_button:hover{
+    background : gray;
+}
+#arithmetic_score_td{
+    font-size: 150%;
+    font-family:"Consolas";
+    line-height:220%;
+    font-weight : bold;
+    color : gray;
+    text-decoration : none;
+}
+#arithmetic_game_link,
+#arithmetic_game_link:visited,
+#arithmetic_game_link:focus
+{
+    font-size: 100%;
+    font-family:"맑은 고딕";
+    line-height:220%;
+    font-weight : bold;
+    color : gray;
+    text-decoration : none;
+}
+
+#arithmetic_game_link:hover
+{
+	   color: yellowgreen;
+}
+
+#arithmetic_explanation_link,
+#arithmetic_explanation_link:visited,
+#arithmetic_explanation_link:focus
+{
+    font-size: 100%;
+    font-family:"맑은 고딕";
+    line-height:220%;
+    font-weight : bold;
+    color : gray;
+    text-decoration : none;
+}
+
+#arithmetic_explanation_link:hover
+{
+	   color: yellowgreen;
+}
+
+#arithmetic_archive_link,
+#arithmetic_archive_link:visited,
+#arithmetic_archive_link:focus
+{
+    font-size: 100%;
+    font-family:"맑은 고딕";
+    line-height:220%;
+    font-weight : bold;
+    color : gray;
+    text-decoration : none;
+}
+
+#arithmetic_archive_link:hover
+{
+	   color: yellowgreen;
+}
+/* ===================================================================
+ * 05. drawgraph
+ *
+ * ------------------------------------------------------------------- */
+ #drawgraph_table{
+    width : 100%;
+    height : 100%;
+}
+#drawgraph_title{
+    font-size: 300%;
+    font-family:"맑은 고딕";
+    line-height:350%;
+    font-weight : bold;
+    color : #FF99FF;
+}
+#drawgraph_info{
+    font-size: 100%;
+    font-family:"맑은 고딕";
+    line-height:220%;
+    font-weight : bold;
+    color : #646464;
+}
+#drawgraph_link,
+#drawgraph_link:visited,
+#drawgraph_link:focus
+{
+    font-size: 120%;
+    font-family:"맑은 고딕";
+    line-height:220%;
+    font-weight : bold;
+    color : gray;
+    text-decoration : none;
+}
+
+#drawgraph_link:hover
+{
+	   color: yellowgreen;
+}
+/* ===================================================================
+ * 06. christmas
+ *
+ * ------------------------------------------------------------------- */
+ #christmas_table{
+    width : 100%;
+    height : 100%;
+}
+#christmas_title{
+    background: #ffed86;
+    background: -webkit-linear-gradient(right, #ff84eb , #ffed86 , #79ff80, #79d2ff );
+    background:    -moz-linear-gradient(right,  #ff84eb , #ffed86 , #79ff80, #79d2ff );
+    background:      -o-linear-gradient(right,  #ff84eb , #ffed86 , #79ff80, #79d2ff );
+    background:         linear-gradient(to right, #ff84eb , #ffed86 , #79ff80, #79d2ff );
+    -webkit-background-clip: text;
+            background-clip: text;
+
+    color: transparent;
+    font-weight: bold;
+    font-family:"consolas";
+
+    font-size: 300%;
+    line-height:350%;
+    font-weight : bold;
+}
+#christmas_info{
+    font-size: 100%;
+    font-family:"맑은 고딕";
+    line-height:220%;
+    font-weight : bold;
+    color : #646464;
+}
+#christmas_link,
+#christmas_link:visited,
+#christmas_link:focus
+{
+    font-size: 120%;
+    font-family:"맑은 고딕";
+    line-height:220%;
+    font-weight : bold;
+    color : gray;
+    text-decoration : none;
+}
+
+#christmas_link:hover
+{
+	   color: yellowgreen;
+}
+
+/* ===================================================================
+ * 99. contact
+ *
+ * ------------------------------------------------------------------- */
+#contact_table{
+    width : 100%;
+    height : 100%;
+}
+#contact_title{
+    font-size: 300%;
+    font-family:"맑은 고딕";
+    line-height:350%;
+    font-weight : bold;
+    color : #FF99FF;
+}
+#contact_info{
+  font-size: 100%;
+  font-family:"맑은 고딕";
+  line-height:220%;
+  font-weight : bold;
+  color : #646464;
+}
+#contact_interval{
+    height:5%;
+}
+#contact_type{
+   font-size : 170%;
+   font-family:"consolas";
+   line-height: 250%;
+   font-weight: bold;
+   color : deepskyblue;
+}
+#contact_link,
+#contact_link:visited,
+#contact_link:focus
+{
+    font-size: 110%;
+    line-height : 200%;
+    font-family:"consolas";
+    font-weight : bold;
+    color : #646464;
+    text-decoration : none;
+}
+#contact_link:hover
+{
+	color: skyblue;
+}
+/* ===================================================================
+ * 08. header styles - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+header {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 5%;
+	right : 10%;
+}
+header .row {
+	height: auto;
+	position: relative;
+}
+/* -------------------------------------------------------------------
+ * header social - (_layout.css)
+ * ------------------------------------------------------------------- */
+header .social-links {
+	position: absolute;
+	right: 0%;
+	top: 0%;
+	text-align: right;
+
+}
+
+header .social-links ul {
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+header .social-links ul li {
+	display: inline-block;
+	padding: 0.9rem;
+	font-size : 125%;
+
+}
+
+
+/* -------------------------------------------------------------------
+ * scroller
+ * ------------------------------------------------------------------- */
+.scroll_container {
+    position: relative;
+    width: 32px;
+    height: 48px;
+    border-radius: 16px;
+    border: 2px white solid;
+    box-sizing: border-box;
+}
+
+.scroller {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background: white;
+    opacity: 1;
+
+    animation-duration: 1.5s;
+    animation-name: scroll;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes scroll {
+  0% {
+    top: 8px;
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    top: 16px;
+    opacity: 0;
+  }
+  90% {
+    top: 8px;
+    opacity: 0;
+  }
+  100% {
+    top: 8px;
+    opacity: 1;
+  }
+}

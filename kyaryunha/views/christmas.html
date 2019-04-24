@@ -1,0 +1,34 @@
+<!DOCTYPE>
+
+<html>
+<head>
+    <title> 크리스마스 트리 그려요!</title>
+    <meta name="author" content="캬륜하,KyaRyunHa">
+    <meta name="description" content="크리스마스 트리 그려요!">
+    <meta name="keywords" content="Tree,DrawingChristmasTree,크리스마스트리,크리스마스트리그리기,크리스마스트리그리기프로그램,크리스마스트리그리기사이트,캬륜하,KyaRyunHa">
+    <link rel="stylesheet" type="text/css" href="css/christmas.css">
+    <script type="text/javascript" src="js/christmas.js"></script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/snowfall.jquery.js"></script>
+</head>
+<body onload="drawgraph_graphicgraph()">
+    <script type='text/javascript'> 
+        $(document).ready(function(){            
+            $(document).snowfall({deviceorientation : true, round : true, minSize: 1, maxSize:8,  flakeCount : 200});
+        });
+    </script> 
+    <!-- Christmas Page -->
+        <div id = "linking">
+            <a href="christmas" class="kyaryunha_link"><i>ChristmasTree</i></a>
+            <a href="christmas_introduce" class="kyaryunha_link"><i>Introduce</i></a>
+            <a href="christmas_manual" class="kyaryunha_link"><i>Manual</i></a> 
+            <a href="kyaryunha"class="kyaryunha_link"><i>Kyaryunha</i></a>
+        </div>
+        <div id = "are_linking">
+            <a href="javascript:lightOn()" id="lightId" class="kyaryunha_link" style="color:#FF0000"><i>LightOff</i></a>
+            <a href="javascript:MSTon()" id="MSTid" class="kyaryunha_link"  style="color:#FF0000"><i>Tree</i></a>
+        </div>
+    <div id="drawgraph_pan"> </div>
+</body>
+</html>

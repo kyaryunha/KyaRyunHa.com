@@ -1,0 +1,245 @@
+<!DOCTYPE>
+
+<html>
+<head>
+    <title>제목은 아무말을 적고 싶어요</title>
+    <meta name="author" content="캬륜하,KyaRyunHa">
+    <meta name="description" content="캬륜하는 사이트를 만들고 싶어요">
+    <meta name="keywords" content="캬륜하,KyaRyunHa">
+    <link rel="stylesheet" type="text/css" href="css/thisiscss.css">
+    <script type="text/javascript" src="js/thisisjavascript.js"></script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <!-- Kyaryunha Page -->
+    <div id = "kyaryunha_page">
+        <header>
+        
+        <div class="row">
+                <div class="social-links">
+                   <ul>
+                       <li><a href="#contact_page" id="kyaryunha_link"><i>Kyaryunha</i></a></li>
+                       <li><a href="https://twitter.com/kyaryunha_limsi/with_replies" id="kyaryunha_link" target="_blank"><i>Twitter</i></a></li>
+                       <li><a href="https://blog.naver.com/kyaryunha" id="kyaryunha_link" target="_blank"><i>Blog</i></a></li>
+                       <li><a href="https://www.acmicpc.net/user/kyaryunha" id="kyaryunha_link" target="_blank"><i>Boj</i></a></li>
+                    </ul>
+                </div>
+        </div>
+
+       </header>
+
+        <!-- KyaRyunHa -->
+        <table id = "kyaryunha_table">
+        <tr height="20%"></tr>
+        <tr>
+            <td width="16%"></td>
+            <td width="36%">
+                <hr color="white" size="3%">
+                <span id="kyaryunha_title">KyaRyunHa<br></span>
+            <!-- 소개 -->
+
+                <span id="kyaryunha_info">
+                    캬륜하는 사이트를 만들고 싶어요<br>
+                    어떤 사이트를 만들고 싶은지는 생각해보지 않았어요<br>
+                    그렇지만 무엇을 해야할지 모른다고 가만히 있는 것은 도움이 되지 않아요<br>
+                    아무거나 하고 있다보면 무언가를 하고 있지 않을까요<br>
+                </span>
+                <br><br>
+                <hr color="white" size="3%">
+            </td>
+
+            <td width="43%">
+                <br><br>
+                <img src="image/sajin.png" id ="kyaryunha_sajin">
+                <br><br><br><br>
+            </td>
+            <td width="15%"></td>
+        </tr>
+        <tr>
+            <div id="kyaryunha_scroller">
+                <div class="scroll_container">
+                    <div class="scroller"></div>
+                </div>
+            </div>
+        </tr>
+
+        </table>
+    </div>
+
+
+   <!-- First Page -->
+   <div id ="first_page">
+         <table id="sleepcomputer_table">
+         <tr height="5%">
+         <tr>
+             <td width="16%"></td>
+             <td>
+                    <span id="sleepcomputer_title">1. Sleep Computer<br></span>
+
+                    <span id="sleepcomputer_info">
+                        밤에 자야 하는데, 컴퓨터는 켜놓아야 해요<br>
+                        컴퓨터의 불빛이 신경쓰이는데 절전모드로 해놓으면 안되요<br>
+                        유튜브를 들으면서 자고 싶은데 유튜브는 절전모드에서 재생되지 않거든요<br>
+                    </span>
+                    <br>
+                    <span id="sleepcomputer_info">
+                        캬륜하와 같은 생각을 하고 있던 너의 고민을 이 사이트는 해결해 줄거에요<br>
+                        유튜브에서 밤에 듣고 싶은 노래를 켜요<br>
+                        아래 사이트로 접속해서 F11을 누르면 전체화면이 될거에요<br>
+                        화면을 검은색으로 채워져 있어요<br>
+                        화면의 불빛에 방해받지 않고 노래를 들을 수 있어요<br>
+                        좋아하는 노래와 함께 꿈나라로 산책가면 되요<br>
+                    </span>
+                    <br>
+                    <span id="sleepcomputer_info">
+                        링크는 다음과 같아요<br>
+                    </span>
+                    <br>
+                    <span id="sleepcomputer_info">
+                            <a href = "javascript:sleepcomputer_linking()" id="sleepcomputer_link" target="_blank">
+                                Sleep Computer
+                            </a>
+                            <input type="color" value="#000000" onchange="change_sleepcomputer(this.value)">
+                        <br>
+                    </span>
+                    <br>
+                    <span id="sleepcomputer_info">
+                        검은 화면이 나오나요?<br>
+                        정상이에요!<br>
+                    </span>
+                    <br>
+                    <span id="sleepcomputer_info">
+                        다른색 화면을 원하시나요?<br>
+                        Sleep Computer의 오른쪽을 눌러 색깔을 변경하고 다시 접속해주세요!<br>
+                    </span>
+            </td>
+        </tr>
+        </table>
+    </div>
+
+    <!-- Second Page -->
+    <div id ="second_page">
+          <table id="arithmetic_table">
+          <tr height="5%">
+          <tr height="30%">
+              <td width="16%"></td>
+              <td>
+                     <span id="arithmetic_title">2. Arithmetic Sequence Game <br></span>
+
+                     <button id="arithmetic_game_link" onclick="javascript:arithmetic_new_first_td()"> 새로운 게임을 시작하고 싶다면 눌러주세요 </button>
+                     <button id="arithmetic_explanation_link" onclick="javascript:arithmetic_explanation_linking()"> 게임에 대한 설명이나 팁이 필요하다면 눌러주세요 </button>
+                     <button id="arithmetic_archive_link" onclick="javascript:arithmetic_archive()"> 점수 아카이브에요 </button>
+             </td>
+         </tr>
+         <tr>
+             <td></td>
+             <td>
+                  <table id = arithmetic_game_pan>
+                  </table>
+             </td>
+         </tr>
+         <tr id = "arithmetic_score_td">
+            <td width = "16%"></td>
+        </tr>
+         </table>
+     </div>
+    <!-- Third Page : 그래프 그리기 -->
+    <div id ="third_page">
+        <table id="drawgraph_table">
+        <tr height="5%">
+        <tr>
+            <td width="16%"></td>
+            <td>
+                   <span id="drawgraph_title">3. Draw Graph<br></span>
+                   <span id="drawgraph_info">
+                        Draw Graph는 그래프 그리기를 도와주는 사이트에요<br>
+                        Draw Graph와 함께라면 Simple하고 Speed 하게 그래프를 그릴 수 있어요<br>
+                        <br>
+                        설명에 다양한 그래프 예시를 보여주면 이해하기 쉬워져요<br>
+                        그래프 관련 알고리즘을 쉽게 설명할 수 있도록 도움이 되고 싶어요  <br><br>
+                   </span>
+                   <button id="drawgraph_link" onclick="javascript:drawgraph_linking()"> kyaryunha.com/drawgraph </button>
+                   <br>
+           </td>
+       </tr>
+       </table>
+   </div>
+       <!-- Fourth Page : 크리스마스 그리기 -->
+       <div id ="fourth_page">
+        <table id="christmas_table">
+        <tr height="5%">
+        <tr>
+            <td width="16%"></td>
+            <td>
+                   <span id="christmas_title">4. Christmas Tree<br></span>
+                   <span id="christmas_info">
+                        Merry Christmas<br>
+                        Christmas는 크리스마스 트리를 그리는 사이트에요<br>
+                        다른 집들은 다들 크리스마스 트리 있는데, 나만 크리스마스 트리 없어라고 생각한다면<br>
+                        캬륜하 사이트와 함께 크리스마스 트리를 만들어 보지 않을래요? <br>
+                        사이클 있는 그래프는 그릴 수 없어요 <br>
+                        크리스마스 트리만 그릴 수 있어요 <br>
+                        크리스마스 최스 스패닝 트리도 그릴 수 있어요!<br>
+                        <br>
+                        트리의 불을 키는 기능은 2019.12.25날 구현할 예정입니다 :D <br>
+                        <br>
+                   </span>
+                   <button id="christmas_link" onclick="javascript:christmas_linking()"> kyaryunha.com/christmas </button>
+                   <br>
+           </td>
+       </tr>
+       </table>
+   </div>
+    <!-- Contact-->
+    <div id ="contact_page">
+          <table id="contact_table">
+
+          <tr id="contact_interval"></tr>
+          <tr>
+              <td width="16%"></td>
+              <td>
+                    <hr size ="10%" color=#CC99FF align="left" width="12%">
+                     <span id="contact_title">Contact<br></span>
+
+                     <span id="contact_info">
+                         캬륜하의 아이디들이에요<br>
+                         계정 만드는게 취미라서 막 10계정 넘어가는 sns도 있긴 하지만, 대표적인 것만 적었어요<br>
+                         클릭하면 링크로 연결되는 것도 있고, 연결되지 않는 것도 있어요<br>
+                     </span>
+                     <table>
+                       <br>
+                        <td>
+                           <tr>
+                            <span id="contact_type">SNS<br></span>
+                            <a href="https://twitter.com/kyaryunha_limsi/with_replies" id="contact_link" target="_blank">Twitter : @kyaryunha_limsi<br></a>
+                            <a href="https://blog.naver.com/kyaryunha" id="contact_link" target="_blank">Blog : kyaryunha<br></a>
+                            <a href="https://open.kakao.com/o/sQkiyLZ" id="contact_link" target="_blank">KakaoTalk : 1:1 Open chatting <br></a>
+                          </tr>
+                        </td>
+                        <br>
+                        <td>
+                           <tr>
+                            <span id="contact_type">Online Judge<br></span>
+                            <a href="https://www.acmicpc.net/user/kyaryunha" id="contact_link" target="_blank">BOJ: @kyaryunha<br></a>
+                            <a href="http://codeforces.com/profile/kyaryunha" id="contact_link" target="_blank">CodeForces : kyaryunha<br></a>
+                          </tr>
+                        </td>
+                        <br>
+                        <td>
+                           <tr>
+                            <span id="contact_type">Game<br></span>
+                            <a id="contact_link">Nintendo 3DS : 2552 1554 3851<br></a>
+                            <a id="contact_link">Pokemon Go : -<br></a>
+                            <a id="contact_link">あんさんぶるスターズ : 1000043370<br></a>
+
+                          </tr>
+                        </td>
+                    </table>
+              </td>
+          </tr>
+          </table>
+     </div>
+
+</body>
+
+</html>
