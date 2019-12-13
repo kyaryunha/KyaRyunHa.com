@@ -19,7 +19,7 @@
 
 #### Write Period 2019.12 ~
 
-> It's not Web Front End, But My Blog...?? Just Fun for Document Design.
+> It's not Web Front End, But My Blog(!!)
 >
 > You can visit pdf like this, kyaryunha.com/xxx.pdf 
 
