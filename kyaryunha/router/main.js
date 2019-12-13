@@ -43,6 +43,11 @@ module.exports = function(app)
       app.get('/downloads',function(req,res){
          res.render('downloads.html')
       });
+
+      app.get('/cv',function(req,res){
+         res.render('cv.pdf')
+      });
+
       /*
       router.get('/', function(req, res) {
          res.render('christmas.html');
