@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Read Japanese</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script type="text/javascript" src="js/hiragana.js"></script>
+    <style>
+        th, td{
+            text-align:center;
+            width: 90px;
+        }
+    </style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-default" style="background-color:#FFDF65">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Read Japanese</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li style="background-color:#ffbb33"><a href="hiragana.html">Hiragana <span class="sr-only">(current)</span></a></li>
+                <li><a href="katakana.html">Katakana </a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Another <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">다른 건 아직 없습니다 ㅇㅅㅇ</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Kya Ryun Ha <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="https://github.com/kyaryunha" target="_blank">Github</a></li>
+                        <li class="divider"></li>
+                        <li><a href="http://kyaryunha.com/drawgraph" target="_blank">Draw Graph</a></li>
+                        <li><a href="http://kyaryunha.com/christmas" target="_blank">Christmas Tree</a></li>
+                        <li><a href="#">Learn Japanese</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<main role="main">
+    <div class="container" style="background-color: #FFF8C6">
+        <div class="row">
+            <div class="col-xs-12 col-md-8">
+                <h3>How to Read?</h3>
+                <div>
+                    <h1 id="question">か</h1>
+                </div>
+                <div>
+                    <input type="text" class="form-control" id="your-answer" onkeydown="javascript:IsAnswerEnter();" value="ka" />
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-4">
+                <div>
+                    <h3>Score</h3>
+                </div>
+                <div>
+                    <h2 id="your-score">0</h2>
+                </div>
+            </div>
+        </div>
+
+        <br>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container">
+        <table class="table table-bordered" style="font-size:18px;">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th style="background-color: #FFDF65">-</th>
+                    <th style="background-color: lightgreen">k</th>
+                    <th style="background-color: lightskyblue">g</th>
+                    <th style="background-color: lightgreen">s</th>
+                    <th style="background-color: lightskyblue">z</th>
+                    <th style="background-color: lightgreen">t</th>
+                    <th style="background-color: lightskyblue">d</th>
+                    <th style="background-color: lightgreen">n</th>
+                    <th style="background-color: lightgreen">h</th>
+                    <th style="background-color: lightskyblue">b</th>
+                    <th style="background-color: lightpink">p</th>
+                    <th style="background-color: lightgreen">m</th>
+                    <th style="background-color: lightgreen">y</th>
+                    <th style="background-color: lightgreen">r</th>
+                    <th style="background-color: lightgreen">w</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>a</th>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">あ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">か</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">が</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">さ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">ざ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">た</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">だ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">な</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">は</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">ば</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">ぱ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">ま</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">や</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">ら</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">わ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">ん</td>
+                </tr>
+                <tr>
+                    <th>i</th>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">い</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">き</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">ぎ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">し</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">じ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">ち</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">ぢ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">に</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">ひ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">び</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">ぴ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">み</td>
+                    <td></td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">り</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>u</th>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">う</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">く</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">ぐ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">す</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">ず</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">つ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">づ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">ぬ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">ふ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">ぶ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">ぷ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">む</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">ゆ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">る</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>e</th>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">え</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">け</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">げ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">せ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">ぜ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">て</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">で</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">ね</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">へ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">べ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">ぺ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">め</td>
+                    <td></td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">れ</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>o</th>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">お</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">こ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">ご</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">そ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">ぞ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">と</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">ど</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">の</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">ほ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">ぼ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">ぽ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">も</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">よ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">ろ</td>
+                    <td onmouseover="ChangeColor(this);" onmouseleave="ChangeOriginalColor(this)" onclick="javascript:IsClickAnswer(this);">を</td>
+                    <td></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</main>
+
+<footer class="container">
+    <p>&copy; kyaryunha 2019-2020</p>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>
