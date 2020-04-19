@@ -1,3 +1,5 @@
+# 업데이트 된지 한참 된 레포지토리입니다. 현재 사이트 코드는 kyaryunha.com-static 레포지토리에 올라오고 있습니다.
+
 # KyaRyunHa.com
 
 #### My First Web Front End.
